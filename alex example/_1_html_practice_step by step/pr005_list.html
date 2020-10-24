@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>List</title>
+		<meta charset="UTF-8" >
+		<style>
+			dd {
+				color=red;
+			}
+			/* class selector */
+			.text_green {
+				color= lime;
+				}
+			.bg_black {
+				background-color: black;
+				}
+			.bg_yellow {
+				background-color: yellow;
+				}
+		</style>
+	</head>
+	<body>
+		<span class="text_green bg_yellow">Granny Smith</span>
+		<ul>
+			<li>Apples
+				<ul>
+					<li><span class="text_green bg_yellow">Granny Smith</span></li>
+					<li>Red Delicious</li>
+				</ul>
+			</li>
+			<li>Bananas</li>
+			<li>Cherries</li>
+			<li class="text_green">Milk</li>
+		</ul>
+		<ol type="1">
+			<li>Elementary</li>
+			<li>High School</li>
+			<li>Cegep
+				<ul>
+					<li>John Abbott
+						<ol type="a">      <!-- Another Way:  <ol type="a" start="24">  -->
+							<li value="24">Sciences</li>   <!-- Even type "I or A", always use nemeric value for "value" and "start" -->
+							<li>Arts</li>
+							<li>History</li>
+							<li>English</li>
+						</ol>
+					</li>
+					<li>Vanier</li>
+				</ul>			
+			</li>
+		</ol>
+		<hr />
+		<dl>
+			<dt>XML</dt>
+				<dd>Extensible Markup Language</dd>
+			<dt>HTML</dt>
+				<dd>Hyper-Text Markup Language</dd>
+			<dt>CSS</dt>
+				<dd>Cascading Style Sheets</dd>
+			<dt>Unordered List</dt>
+			<dt>Ordered List</dt>
+			<dt>Definition List</dt>
+				<dd>Ways of displaying lists</dd>			
+		</dl>
+	</body>
+</html>

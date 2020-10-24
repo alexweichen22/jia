@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/styletable.css">
+	</head>
+	<body>
+		
+		<form action="php/test.php" method="POST">   
+			<h2>Contact Us</h2>
+			<label for="id_full_name">Full Name:</label>
+			<input type="text" name="full_name" id="id_full_name" required /><br /><br />
+			<label for="id_email">Email:</label>	
+			<input type="text" name="email" id="id_email" /><br /><br />
+			<label for="id_pword">Password:</label>	
+			<input type="password" name="pword" id="id_pword" minlength="8" maxlength="32" /><br /><br />
+				
+			<select name="wherehear[]" id="id_wherehear" multiple>
+				<option>News Paper</option>
+				<option selected>Official Website</option>
+				<option>Friends</option>
+				<option>Facebook</option>
+				<option>Twitter</option>
+				<option>Other</option>
+			</select>
+			<br /><br />
+			<label>Weather:</label>
+			<label for="sunny_weather">Sunny</label>
+			<input type="radio" name="weather" id="sunny_weather" value="Sunny" />
+			<label for="cloudy_weather">Cloudy</label>
+			<input type="radio" name="weather" id="cloudy_weather" value="Cloudy" />
+			<label for="rain_weather">Rain</label>
+			<input type="radio" name="weather" id="rain_weather" value="rain" />
+			<button type="submit">Submit</button>
+		</form>
+		
+
+
+	</body>
+</html>

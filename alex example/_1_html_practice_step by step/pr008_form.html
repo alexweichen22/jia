@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/styletable.css">
+	</head>
+	<body>
+		<form action="http://jac.stephmoreau.ca/submitForm/?class=html" method="POST">   <!-- URL by default is for GET, TO modify to POST, put"?class=htm" after URL-->
+			<label for="txt_fname">First Name</lable>
+			<input type="text" name="first_name" id="txt_fname" maxlength="30" />
+			<!--
+				<label for="pw_field">Password</lable>
+				<input type="password" name="pword" id="pw_html"
+			<br />				
+			-->
+
+			
+			
+				<label for="chk_spam">Spam me please! I really really really love to get spam!</label>
+				<input type="checkbox" name="spam" id="chk_spam" value="yes" />
+			
+<!--
+				<p>
+					Age Range<br />
+					<input type="radio" name="rad_age" id="rad_baby" value="u18" />
+					<lable for="rad_baby">Under 18</lable>
+					<input type="radio" name="rad_age" id="rad_regular" value="18-65" checked/>
+					<lable for="rad_regular">18-65</lable>	
+					<input text="radio" name="rad_age" id="rad_senior" value="65+" />
+					<label for="rad_senior">65+</label>
+				</p>
+-->
+
+			
+			<br />
+			<p>
+				Sex:<br />
+				<input type="radio" name="Sex" id="s_m" value="m" />
+				<label for="s_m">Male</label>
+				<input type="radio" name="Sex" id="s_f" value="f" />
+				<label for="s_f">Female</label>
+				
+			</p>
+			<!--
+			<button type="submit">
+				<div class="img-with-text">
+						<img src="images/dog.jpeg" alt="dog-submit" width="100">
+						<p>Click This Dog to Submit</p>
+				</div>
+			</button>
+			
+			
+			<input type="number" max min step> 
+			-->
+			<button type="submit">
+				<strong>Click this dog to submit</strong><br />
+						<img src="images/dog.jpeg" alt="dog-submit" width="100">
+			</button>	
+			
+			<select name="fruit[]" multiple>			<!-- in case of multiple, set the name as array by adding [] -->
+			</select>
+			
+			
+			
+		</form>
+
+
+
+	</body>
+</html>
