@@ -1,0 +1,53 @@
+body{		
+		background-color: lightblue;		
+		margin-left: 15%;		
+		margin-right: 15%;		
+		border: 2px	dotted	gray;		
+		padding: 10px;		
+		font-family: sans-serif;		
+	}	
+	
+main{
+	float: right;
+	width: 70%;
+	}
+
+aside{
+	float: left;
+	width: 30%;
+	}
+	
+footer{
+	float: right;
+	width: 70%
+	}
+
+#top{
+	color: purple;
+	}
+
+.title_class{
+	color: purple;
+	}
+
+small{
+	color: grey;
+	}
+
+table, tr, th, td {
+	border: 1px solid black;
+	}
+
+/*Change Textbox size (contact page - subject)*/
+#input_subject {
+	width: 300px;
+	height: 25px;
+	}
+
+#mouse, .button {
+	color: tomato;
+	background-color: yellow;
+	border: 1px solid gray;
+	}
+
+

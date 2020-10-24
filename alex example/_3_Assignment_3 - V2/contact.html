@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment 3</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/style_assignment3.css">
+	</head>
+	<body>
+		<header><h1 id="top">Contact me</h1></header>
+		<a href="index.html">Home</a> | <a href="contact.html">Contact</a>
+		<main>
+			<br />
+			<header><h2>Please fill the following form to reach me</h2></header>
+			<br />
+			<form action="http://jac.stephmoreau.ca/submitForm/">
+				<input type="hidden" name="hiddenName" id="hidden_name" value="Wei Chen"/>
+				<label for="input_name">From: Your Name:</label><br />
+				<input type="text" name="clientName" id="input_name" /><br />
+					<br />
+				<label for="input_email">Email Address:</label><br />
+				<input type="text" name="clientEmail" id="input_email" /><br />
+					<br />
+				<label for="input_subject">Subject(maximum 75 characters):</label><br />
+				<input type="text" name="clientSubject" id="input_subject" maxlength="75" /><br />                       <!--CSS to change text box size-->
+					<br />
+				<label for="input_content">Your Email Content:</label><br />
+				<textarea name="clientContent" id="input_content" cols="40" rows="8" maxlength="75"></textarea><br />    <!--TextArea-->
+					<br />
+				<label>How Do You Hear Me:</label><br />
+				<select name="clientHow">
+					<option>This Website</option>
+					<option>Facebook</option>
+					<option>Twitter</option>
+					<option selected>Linkedin</option>
+					<option>WhatsApp</option>
+					<option>Friend or Colleague</option>
+					<option>Other</option>
+				</select>
+				<br /><br />
+				<button type="submit">
+					As usual, click the MOUSE to Submit<br />
+					<img src="images/mouse.png" alt="Submit" width="200">
+				</button><br /><br />
+				<button type="reset" class="button"> Reset </button>
+				
+			</form>
+			<br /><br /><br />
+			<table>
+				<caption>To Make Appointment with me, Please check my time and location:</caption>
+				<thead>
+					<tr>
+						<th></th>
+						<th>---Monday---</th>
+						<th>---Tuesday--</th>
+						<th>--Wednesday-</th>
+						<th>--Thursday--</th>
+						<th>---Friday---</th>			
+					</tr>
+				</thead>				
+				<tbody>
+					<tr>
+						<th>8-10AM</th>
+						<td>OFFICE</td>
+						<td>WAREHOUSE</td>
+						<td>STORE</td>
+						<td>SITE</td>
+						<td>OFFICE</td>					
+					</tr>
+					<tr>
+						<th>10-12AM</th>
+						<td>WAREHOUSE</td>
+						<td>OFFICE</td>
+						<td>OFFICE</td>
+						<td>SCHOOL</td>
+						<td>HOME</td>				
+					</tr>
+					<tr>
+						<th>12-2PM</th>
+						<td>STORE</td>
+						<td>OFFICE</td>
+						<td>OFFICE</td>
+						<td>SCHOOL</td>
+						<td>HOME</td>					
+					</tr>
+					<tr>
+						<th>2-4PM</th>
+						<td>SITE</td>
+						<td>OFFICE</td>
+						<td>OFFICE</td>
+						<td>SCHOOL</td>
+						<td>HOME</td>					
+					</tr>
+					<tr>
+						<th>4-9PM</th>
+						<td colspan="5">SCHOOL</td>					
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+			<article>
+				<h2>Check the map for the locations:</h2><br />
+				<div>
+					<img src="images/LocationMap.bmp" alt="Locations" usemap="#locationMap" />
+					<map name="locationMap">
+						<area title="School" href="#school" alt="School" shape="circle" coords="296,254,38" />
+						<area title="Office" href="#office" alt="Office" shape="rect" coords="150,99,180,126" />
+						<area title="Warehouse" href="#warehouse" alt="Warehouse" shape="poly" coords="161,56,161,81,187,81" />
+						<area title="Store" href="#store" alt="Store" shape="poly" coords="53,90,67,111,84,89,69,73" />
+						<area title="Site" href="#site" alt="Site" shape="poly" coords="6,18,26,20,30,0,34,18,56,19,38,29,46,46,30,37,14,44,23,30" />
+					</map>
+				</div>	
+				<br /><br />
+				<p id="school">
+					School: John Abbottt - St Anne De Bellevue<br />
+					Address: 21275 Lakeshore Drive, Sainte-Anne-de-Bellevue, QC H9X 3L9
+				</p>
+					<img src="images/school.jpeg" alt="School" width="400" /><br /><br />
+				<p id="office">
+					Office: Montreal-West<br />
+					Address: ---
+				</p>
+					<img src="images/office.jpeg" alt="Office" width="400" /><br /><br />
+				<p id="warehouse">
+					Warehouse: NDG<br />
+					Address: ---
+				</p>
+					<img src="images/warehouse.jpeg" alt="Warehouse" width="400" /><br /><br />
+				<p id="store">
+					Store: NDG<br />
+					Address: ---
+				</p>
+					<img src="images/store.jpeg" alt="Store" width="400" /><br /><br />
+				<p id="site">
+					Site: Westmount<br />
+					Address: ---
+				</p>
+					<img src="images/site.jpeg" alt="Site" width="400" /><br /><br />
+			</article>
+
+
+
+		</main>
+		<aside>
+			<br />
+			<br />
+			<img src="images/profile.jpg" alt="profile" height="225" width="150" />
+			<p>Wei (Alex) Chen</p>
+			<p>514-000-0000</p>
+			<p><a href="mailto:wchencisco@gmail.com">wchencisco@gmail.com</a></p>			
+			<nav>
+				<a href="http://www.facebook.com/weialexchen" target="_blank">
+					<img src="images/facebook.png" alt="facebook" height="50" width="50" /> 
+				</a>
+				<a href="https://twitter.com/WChenCisco" target="_blank">
+					<img src="images/twitter.png" alt="twitter" height="50" width="50" /> 
+				</a>
+				<a href="https://www.linkedin.com/in/alexweichen/" target="_blank">
+					<img src="images/linkedin.png" alt="linkedin" height="50" width="50" /> 
+				</a>
+			</nav>
+			<br />
+			<nav>
+				<a href="#hometown">Home Town </a><br /><br />
+				<a href="#ambitions">Ambitions </a><br /><br />
+				<a href="#interests">Interests </a><br /><br />
+				<a href="#hobbies">Hobbies </a><br /><br />
+				<a href="#family">Family </a><br />				
+			</nav>
+		</aside>
+		<footer>
+			<p><small>&copy;Copy Right & All Other Rights Reserved by Wei (Alex) Chen.</small></p>
+		</footer>
+	</body>
+
+</html>
