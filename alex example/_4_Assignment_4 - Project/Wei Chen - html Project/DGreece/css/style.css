@@ -1,0 +1,72 @@
+
+body {
+  background-color: whitesmoke;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header > * {
+  flex: 1 100%;
+}
+
+header > h1 {
+  font-size: 48px;
+  color: darkblue;
+  margin-bottom: 16px;
+}
+
+header > p {
+  color: gray;
+  margin-top: 0px;
+}
+
+header > div {
+	display: flex;
+}
+
+header a {
+  flex: 1 25%;
+  text-align: center;
+  color: white;
+  background-color: darkblue;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+main {
+  float: right;
+  width: 70%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+footer {
+  float: right;
+  width: 70%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+}
+
+td[colspan] {
+  text-align: center;
+}
